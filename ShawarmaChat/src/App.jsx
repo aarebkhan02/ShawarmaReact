@@ -687,7 +687,7 @@ export default function App() {
           <div ref={chatEndRef} />
         </section>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="p-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="p-4 mb-4">
           <div className="flex gap-3 bg-white px-4 py-3 rounded-2xl shadow">
             <input
               {...register("message", { required: true })}
