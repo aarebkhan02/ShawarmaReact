@@ -354,7 +354,7 @@ export default function App() {
   const { register, handleSubmit, reset } = useForm()
   const { register: registerName, handleSubmit: handleNameSubmit } = useForm()
 
-  const url = "https://shawarma-production.up.railway.app"
+  const url = "https://shawarma-hnls.onrender.com"
 
   /* ---------------- SAFE DERIVED DATA ---------------- */
   const userChats = usersData?.[user]?.chats || []
