@@ -666,7 +666,7 @@ export default function App() {
           </button>
         </header>
 
-       <section className="flex-1 overflow-y-auto px-4 py-6 pb-28 space-y-8">
+        <section className="flex-1 overflow-y-auto px-4 py-6 pb-28 space-y-8">
           {chat.map((item, idx) => (
             <div key={idx} className="space-y-6">
               <div className="flex justify-end">
@@ -688,20 +688,21 @@ export default function App() {
         </section>
 
         <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="sticky bottom-0 bg-[#FAFAFB] p-4 pb-[env(safe-area-inset-bottom)]"
-    >
-      <div className="flex gap-3 bg-white px-4 py-3 rounded-2xl shadow">
-        <input
-          {...register("message", { required: true })}
-          placeholder="Message Shawarma..."
-          className="flex-1 outline-none"
-        />
-        <button className="bg-[#7C5CFC] text-white p-3 rounded-full">
-          <LuSendHorizontal size={18} />
-        </button>
-      </div>
-    </form>
+          onSubmit={handleSubmit(onSubmit)}
+          className="fixed bottom-0 left-0 md:left-64 right-0 bg-[#FAFAFB] p-4 pb-[env(safe-area-inset-bottom)] z-50"
+        >
+          <div className="flex gap-3 bg-white px-4 py-3 rounded-2xl shadow">
+            <input
+              {...register("message", { required: true })}
+              placeholder="Message Shawarma..."
+              className="flex-1 outline-none"
+            />
+            <button className="bg-[#7C5CFC] text-white p-3 rounded-full">
+              <LuSendHorizontal size={18} />
+            </button>
+          </div>
+        </form>
+
 
       </main>
     </div>
