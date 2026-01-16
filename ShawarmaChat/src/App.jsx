@@ -691,7 +691,7 @@ export default function App() {
           onSubmit={handleSubmit(onSubmit)}
           className="fixed bottom-0 left-0 md:left-64 right-0 bg-[#FAFAFB] p-4 pb-[env(safe-area-inset-bottom)] z-50"
         >
-          <div className="flex gap-3 bg-white px-4 py-3 rounded-2xl shadow">
+          <div className="flex gap-3 bg-white px-4 py-3 mb-5 rounded-2xl shadow">
             <input
               {...register("message", { required: true })}
               placeholder="Message Shawarma..."
